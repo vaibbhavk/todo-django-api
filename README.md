@@ -4,7 +4,7 @@ This is a basic REST API for adding, updating, deleting todos. Used Django Rest 
 ## Endpoints
 
 ### Base URL
-https://todo-drf.herokuapp.com/api/
+[https://todo-drf.herokuapp.com/api/](#)
 
 ### Get a list of all todos (GET)
 https://todo-drf.herokuapp.com/api/task-list
