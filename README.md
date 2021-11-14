@@ -6,13 +6,25 @@ This is a basic REST API for adding, updating, deleting todos. Used Django Rest 
 ### Base URL
 https://todo-drf.herokuapp.com/api/
 
-### Get a list of all todos
+### Get a list of all todos (GET)
 https://todo-drf.herokuapp.com/api/task-list
 
-### Get a todo with the specific identifier
-https://todo-drf.herokuapp.com/api/task-detail/{id}
+### Get a todo with the specific identifier (GET)
+https://todo-drf.herokuapp.com/api/task-detail/{id}/
 
+### Create a todo (POST)
+https://todo-drf.herokuapp.com/api/task-create/
 
-    path('task-create/', views.taskCreate, name='task-create'),
-    path('task-update/<str:pk>/', views.taskUpdate, name='task-update'),
-    path('task-delete/<str:pk>/', views.taskDelete, name='task-delete'),
+Body Params:
+title - Title of the todo.
+completed - Accepts true/false.
+
+### Update a todo with the specific identifier (POST)
+https://todo-drf.herokuapp.com/api/task-update/{id}/
+
+Body Params:
+title - Title of the todo.
+completed - Accepts true/false.
+
+### Delete a todo with the specific identifier (DELETE)
+https://todo-drf.herokuapp.com/api/task-delete/{id}/
