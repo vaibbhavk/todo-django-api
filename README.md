@@ -1,9 +1,9 @@
 # todo-django-api
-This is a basic REST API for adding, updating, deleting tasks. Used Django Rest Framework.
+This is a basic REST API for adding, updating, deleting todos. Used Django Rest Framework.
 
 ## Endpoints
 
-https://todo-drf.herokuapp.com/api/task-list - Returns a list of Todos.
+[https://todo-drf.herokuapp.com/api/task-list] - Returns a list of Todos.
 
 
     path('task-detail/<str:pk>/', views.taskDetail, name='task-detail'),
