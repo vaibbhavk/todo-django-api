@@ -3,12 +3,14 @@ This is a basic REST API for adding, updating, deleting todos. Used Django Rest 
 
 ## Endpoints
 
-### Basr URL
+### Base URL
+https://todo-drf.herokuapp.com/api/
 
-[https://todo-drf.herokuapp.com/api/task-list](https://todo-drf.herokuapp.com/api/task-list) - Returns a list of Todos.
+### Get a list of all todos
+https://todo-drf.herokuapp.com/api/task-list
 
-
-[https://todo-drf.herokuapp.com/api/task-detail/{id}](https://todo-drf.herokuapp.com/api/task-detail/{id}) - Returns a todo with the given unique identifier.
+### Get a todo with the specific identifier
+https://todo-drf.herokuapp.com/api/task-detail/{id}
 
 
     path('task-create/', views.taskCreate, name='task-create'),
